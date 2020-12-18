@@ -1,8 +1,9 @@
 ---
-$title: Atribut umum
+"$title": Atribut umum
+"$order": '1'
+description: AMP menyediakan kumpulan atribut umum yang diperluas untuk berbagai komponen AMP (dan elemen HTML).  Dokumen ini menjelaskan setiap atribut umum.
+toc: "[TOC]"
 ---
-
-[TOC]
 
 AMP menyediakan kumpulan atribut umum yang diperluas untuk berbagai komponen AMP (dan elemen HTML).  Dokumen ini menjelaskan setiap atribut umum.
 
@@ -14,18 +15,17 @@ Sering digunakan dengan: gambar, animasi, audio, dan video
 
 Contoh:
 
-[sourcecode:html]
+```html
 <amp-anim src="animated.gif" width="466" height="355" layout="responsive" >
-  <div fallback>Tidak dapat memutar gambar animasi pada perangkat ini.</div>
+  <div fallback>Cannot play animated images on this device.</div>
 </amp-anim>
-[/sourcecode]
+```
 
 Untuk informasi selengkapnya, lihat [Placeholder & fallback](../../../documentation/guides-and-tutorials/develop/style_and_layout/placeholders.md).
 
 ## heights
 
 Semua elemen AMP yang mendukung tata letak `responsive`, juga mendukung atribut `heights`. Nilai atribut ini merupakan ekspresi ukuran berdasarkan ekspresi media, serupa dengan [atribut ukuran pada tag `img`](https://developer.mozilla.org/en-US/docs/Web/HTML/Element/img) namun dengan dua perbedaan utama:
-
 
 1. Nilainya berlaku pada tinggi, bukan lebar elemen.
 2. Nilai persen diizinkan. Nilai persen menunjukkan persentase lebar elemen tersebut. Misalnya, nilai `80%` menunjukkan bahwa tinggi elemen akan menjadi 80% dari lebar elemen.
@@ -34,12 +34,12 @@ Catatan: Jika atribut `heights` ditentukan bersamaan dengan `width` dan `height`
 
 Contoh:
 
-[sourcecode:html]
+```html
 <amp-img src="amp.png"
     width="320" height="256"
     heights="(min-width:500px) 200px, 80%">
 </amp-img>
-[/sourcecode]
+```
 
 Untuk informasi selengkapnya, lihat [Gambar responsif dengan atribut srcset, sizes & heights](../../../documentation/guides-and-tutorials/develop/style_and_layout/art_direction.md).
 
@@ -49,14 +49,14 @@ AMP menyediakan kumpulan [tata letak](../../../documentation/guides-and-tutorial
 
 Contoh:
 
-[sourcecode:html]
+```html
 <amp-img src="/img/amp.jpg"
     width="1080"
     height="610"
     layout="responsive"
     alt="an image">
 </amp-img>
-[/sourcecode]
+```
 
 Untuk informasi selengkapnya, lihat [Kueri Tata Letak & Media](../../../documentation/guides-and-tutorials/develop/style_and_layout/control_layout.md) dan [Spesifikasi Tata Letak](amp-html-layout/index.md).
 
@@ -66,7 +66,7 @@ Semua elemen AMP mendukung atribut `media`. Nilai `media` adalah kueri media. Ji
 
 Contoh:
 
-[sourcecode:html]
+```html
 <amp-img
     media="(min-width: 650px)"
     src="wide.jpg"
@@ -77,7 +77,7 @@ Contoh:
     src="narrow.jpg"
     width="527"
     height="193" layout="responsive"></amp-img>
-[/sourcecode]
+```
 
 Untuk informasi selengkapnya, lihat [Kueri Tata Letak & Media](../../../documentation/guides-and-tutorials/develop/style_and_layout/control_layout.md#element-media-queries).
 
@@ -89,14 +89,14 @@ Sering digunakan dengan: gambar, animasi, video, dan iklan
 
 Contoh:
 
-[sourcecode:html]
+```html
 <amp-img src="card.jpg"
     noloading
     height="190"
     width="297"
     layout="responsive">
 </amp-img>
-[/sourcecode]
+```
 
 ## on
 
@@ -106,18 +106,18 @@ Sering digunakan dengan: lightbox, sidebar, daftar langsung, dan formulir
 
 Sintaks:
 
-[sourcecode:text]
+```text
 eventName:targetId[.methodName[(arg1=value, arg2=value)]]
-[/sourcecode]
+```
 
 Contoh:
 
-[sourcecode:html]
-<button on="tap:my-lightbox">Buka lightbox</button>
+```html
+<button on="tap:my-lightbox">Open lightbox</button>
 <amp-lightbox id="my-lightbox" layout="nodisplay">
   ...
 </amp-lightbox>
-[/sourcecode]
+```
 
 Untuk informasi selengkapnya, lihat  [Tindakan dan Kejadian di AMP](amp-actions-and-events.md).
 
@@ -129,11 +129,11 @@ Sering digunakan dengan: gambar, animasi, video, dan iklan
 
 Contoh:
 
-[sourcecode:html]
+```html
 <amp-anim src="animated.gif" width="466" height="355" layout="responsive">
   <amp-img placeholder src="preview.png" layout="fill"></amp-img>
 </amp-anim>
-[/sourcecode]
+```
 
 Untuk informasi selengkapnya, lihat [Placeholder & fallback](../../../documentation/guides-and-tutorials/develop/style_and_layout/placeholders.md).
 
@@ -143,13 +143,22 @@ Semua elemen AMP yang mendukung tata letak `responsive`, juga mendukung atribut 
 
 Contoh:
 
-[sourcecode:html]
+```html
 <amp-img src="amp.png"
     width="400" height="300"
     layout="responsive"
     sizes="(min-width: 320px) 320px, 100vw">
 </amp-img>
-[/sourcecode]
+```
+
+Untuk informasi selengkapnya, lihat [Gambar responsif dengan atribut srcset, sizes & heights](../../../documentation/guides-and-tutorials/develop/style_and_layout/art_direction.md).
+
+```html
+<img decoding="async"
+    src="amp.png"
+    sizes="(min-width: 320px) 320px, 100vw"
+    class="i-amphtml-fill-content i-amphtml-replaced-content">
+```
 
 Untuk informasi selengkapnya, lihat [Gambar responsif dengan atribut srcset, sizes & heights](../../../documentation/guides-and-tutorials/develop/style_and_layout/art_direction.md).
 
@@ -159,12 +168,12 @@ Untuk sebagian [tata letak](../../../documentation/guides-and-tutorials/develop/
 
 Contoh:
 
-[sourcecode:html]
+```html
 <amp-anim width="245"
     height="300"
     src="/img/cat.gif"
     alt="cat animation">
 </amp-anim>
-[/sourcecode]
+```
 
 Untuk informasi selengkapnya, lihat [Kueri Tata Letak & Media](../../../documentation/guides-and-tutorials/develop/style_and_layout/control_layout.md) dan [Spesifikasi Tata Letak](amp-html-layout/index.md).

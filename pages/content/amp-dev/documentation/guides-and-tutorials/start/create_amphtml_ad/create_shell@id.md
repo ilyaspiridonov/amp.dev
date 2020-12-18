@@ -48,7 +48,7 @@ Kreatif iklan HTML AMP membutuhkan baris gaya [boilerplate](../../../../document
 <style amp4ads-boilerplate>body{visibility:hidden}</style>
 ```
 
-To style your AMPHTML ad, your CSS must be embedded inline in the AMPHTML document using <code><style amp-custom></style> </code>tags in the <code></code> section. As we're rendering a basic image ad, we don't require any CSS, so we won't add these tags.
+Untuk membuat iklan HTML AMP Anda bergaya, CSS Anda harus disematkan inline di dalam dokumen HTML AMP dengan menggunakan tag <code><style amp-custom></style> </code>di dalam bagian <code><head></code>. Karena kita merender atau memuat iklan gambar dasar, kita tidak membutuhkan CSS apa pun, jadi kita tidak akan menambahkan tag-tag ini.
 
 [tip type="note"] **CATATAN –** Untuk iklan HTML AMP, ukuran maksimum untuk sebuah lembar gaya inline adalah *20 kilobyte*. Pelajari lebih lanjut tentang [persyaratan CSS di dalam spek iklan HTML AMP](../../../../documentation/guides-and-tutorials/learn/a4a_spec.md#css). [/tip]
 
