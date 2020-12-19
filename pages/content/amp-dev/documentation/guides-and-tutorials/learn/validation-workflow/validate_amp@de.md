@@ -26,7 +26,7 @@ Der AMP Validator ist mit der AMP JS Bibliothek verbunden, sodass er sofort auf 
 2. Füge "`#development=[1,actions,amp,amp4ads,amp4email]`" zu der URL hinzu. Beispielsweise wird `http://localhost:8000/released.amp.html#development=1` verwendet, um das `AMP` Format zu validieren. Die URL `http://localhost:8000/released.amp.html#development=amp4email` validiert das Dokument anhand der Spezifikation von AMP für E-Mail.
 3. Öffne die [Chrome DevTools Konsole](https://developers.google.com/web/tools/chrome-devtools/debug/console/) und suche nach Validierungsfehlern.
 
-In der Entwicklerkonsole sehen Fehler wie folgt aus:
+In der Entwicklerkonsole sehen Fehler wie folgt aus:<br><amp-img src="/static/img/docs/validator_errors.png"<br>         width="713" height="243" layout="responsive"<br>         alt="Screen grab of AMP Validator errors in chrome developer console"><br></amp-img>
 
 <amp-img src="/static/img/docs/validator_errors.png" width="713" height="243" layout="responsive" alt="Screen grab of AMP Validator errors in chrome developer console"></amp-img>
 
