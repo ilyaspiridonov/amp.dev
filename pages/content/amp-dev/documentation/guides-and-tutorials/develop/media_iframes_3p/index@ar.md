@@ -8,7 +8,7 @@ formats:
 - email
 - ads
 components:
-"- 'استبدلت بـ '"
+- iframe
 author: pbakaus
 contributors:
 - Meggin
