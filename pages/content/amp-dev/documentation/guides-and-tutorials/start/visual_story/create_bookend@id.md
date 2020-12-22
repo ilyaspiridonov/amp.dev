@@ -1,5 +1,5 @@
 ---
-"$title": Creating the bookend
+"$title": Membuat bookend
 "$order": '7'
 description: Setelah Anda menambahkan semua halaman Anda, mari kita lihat layar terakhir dari cerita ini, bookend. Layar terakhir ini mengakhiri cerita ....
 author: bpaduch
@@ -7,7 +7,7 @@ author: bpaduch
 
 Setelah Anda menambahkan semua halaman Anda, mari kita lihat layar terakhir dari cerita ini, "bookend". Layar terakhir ini mengakhiri cerita, dan memungkinkan Anda untuk menampilkan opsi berbagi di media sosial dan tautan terkait di cerita Anda agar pengguna dapat membagikan berita tersebut atau mencari informasi lebih lanjut tentang konten lain di situs Anda.
 
-Informasi pada layar bookend berasal dari berkas JSON yang ditetapkan dalam tag `<amp-story-bookend>`. Untuk tutorial ini, kita telah memiliki berkas JSON ([bookend.json](https://github.com/ampproject/docs/blob/master/tutorial_source/amp-pets-story/bookend.json)) yang memuat data bookend.
+The information on the bookend screen comes from a JSON file that's specified in the `<amp-story-bookend>` tag. For our tutorial, we already have a JSON file ([bookend.json](https://github.com/ampproject/docs/blob/master/tutorial_source/amp-pets-story/bookend.json)) that contains the bookend data.
 
 Tag `<amp-story-bookend>` harus menjadi tag terakhir dalam [`amp-story`](../../../../documentation/components/reference/amp-story.md). Jadi, mari kita **tambahkan** `<amp-story-bookend></amp-story-bookend>` tepat sebelum tag `</amp-story>` penutup. Pada tag `amp-story-bookend`, arahkan atribut `src` ke berkas `bookend.json` dan tetapkan `layout="nodisplay"`:
 
@@ -21,9 +21,9 @@ Jika Anda memuat ulang browser dan menuju ke layar terakhir, Anda akan melihat b
 
 {{ image('/static/img/docs/tutorials/amp_story/bookend_full.gif', 398, 709, align='center third', alt='Bookend' ) }}
 
-Mari kita lihat berkas JSON-nya. Buka berkas [bookend.json](https://github.com/ampproject/docs/blob/master/tutorial_source/amp-pets-story/bookend.json) di editor teks.
+Let's look at the JSON file.  Open the [bookend.json](https://github.com/ampproject/docs/blob/master/tutorial_source/amp-pets-story/bookend.json) file in your text editor.
 
-Setiap layar bookend memerlukan `bookendVersion`, yakni `v1.0` untuk tutorial ini:
+Every bookend screen requires a `bookendVersion`, which is `v1.0` for this tutorial:
 
 ```json
 "bookendVersion": "v1.0",
@@ -43,14 +43,14 @@ Untuk tutorial ini, kita memilih Facebook, Twitter, dan email sebagai penyedia k
 
 {{ image('/static/img/docs/tutorials/amp_story/bookend_social_share.png', 720, 240, align='center half', alt='Bookend social share' ) }}
 
-Bagian lain dari layar bookend digunakan untuk konten terkait. Semua konten terkait ditampung dalam objek `components`.
+The rest of the bookend screen is for related content.  All related content is contained in a `components` object.
 
 Ada berbagai komponen yang dapat Anda gunakan untuk menampilkan tautan dan konten terkait; setiap komponen ditentukan dengan atribut jenis. Mari kita lihat komponen yang tersedia:
 
 <table>
 <thead><tr>
-  <th width="20%">Jenis</th>
-  <th>Deskripsi</th>
+  <th width="20%">Type</th>
+  <th>Description</th>
 </tr></thead>
 <tbody>
   <tr>
@@ -128,6 +128,6 @@ Ada berbagai komponen yang dapat Anda gunakan untuk menampilkan tautan dan konte
 </tbody>
 </table>
 
-Masih banyak yang bisa dipelajari tentang komponen bookend. Untuk mendapatkan informasi lebih lanjut, lihat dokumen referensi [`amp-story`](../../../../documentation/components/reference/amp-story.md).
+There's more to learn about the bookend component. For details, see the [`amp-story`](../../../../documentation/components/reference/amp-story.md) reference documentation.
 
 Cerita kita hampir jadi. Sebelum kita memublikasikannya, mari pastikan bahwa HTML AMP kita telah valid.

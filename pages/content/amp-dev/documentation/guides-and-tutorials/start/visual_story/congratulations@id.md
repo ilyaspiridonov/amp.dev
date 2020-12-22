@@ -5,7 +5,7 @@ description: 'Anda telah berhasil menyelesaikan cerita AMP pertama Anda! Di dala
 author: bpaduch
 ---
 
-Anda telah berhasil menyelesaikan Cerita Web pertama Anda dengan menggunakan AMP!
+You have successfully completed your first Web Story using AMP!
 
 Di dalam tutorial ini, Anda akan mempelajari cara:
 
@@ -18,7 +18,7 @@ Di dalam tutorial ini, Anda akan mempelajari cara:
 
 ## Langkah-langkah berikutnya
 
-Pelajari lebih lanjut tentang Cerita Web dan AMP dari berbagai sumber daya berikut ini:
+Learn more about Web Stories and AMP from these resources:
 
 - [`amp-story`](../../../../documentation/components/reference/amp-story.md)
 - [praktik-praktik terbaik cerita AMP](../../../../documentation/guides-and-tutorials/start/create_successful_stories.md)

@@ -123,7 +123,7 @@ Untuk menerapkan animasi pembukaan pada elemen, Anda harus menetapkan <code>anim
 
 ## Pengaturan waktu animasi
 
-Setiap preset animasi memiliki nilai waktu standar bawaan untuk:
+Setiap preset animasi memiliki nilai waktu default bawaan untuk:
 
 - **penundaan**: Ini adalah jumlah waktu untuk menunda proses memulai animasi.  Misalnya, penundaan selama .3s berarti animasi akan dimulai di halaman setelah 0,3 detik. Penundaan selama 0s (0 detik) berarti animasi akan langsung mulai.
 - **durasi**: Ini adalah lama waktu animasi ditampilkan. Misalnya, animasi fade-in dari awal hingga akhir membutuhkan waktu 500 milidetik.
@@ -247,7 +247,7 @@ Mari kita tunda masuknya gambar pertama agar gambar dimunculkan setelah spanduk 
 
 ```
 
-Muat ulang cerita Anda. Halaman terakhir Anda akan terlihat seperti ini:
+Muat ulang artikel Anda.  Halaman terakhir Anda akan terlihat seperti ini:
 
 {{ anim('/static/img/docs/tutorials/amp_story/pg5-collage-animation.gif', 720, 1280, align='center third', alt='Page 5 collage', poster='/static/img/docs/tutorials/amp_story/pg5-collage.png' ) }}
 

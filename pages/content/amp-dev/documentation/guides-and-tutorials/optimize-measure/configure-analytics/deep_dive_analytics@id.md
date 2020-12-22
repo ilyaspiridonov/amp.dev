@@ -54,18 +54,18 @@ Kode contoh di atas adalah untuk membantu Anda belajar, tetapi ini sama sekali b
 
 ## Ke mana data analisis dikirimkan: atribut type (jenis)
 
-AMP dirancang untuk mendukung dua pola pengumpulan data yang umum:
+AMP is designed to support two common patterns of data collection:
 
 - Penyerapan data oleh endpoint milik penayang untuk sistem analitik internal.
-- Penyerapan data oleh endpoint milik vendor untuk interoperabilitas dengan solusi vendor (misalnya, [Adobe Analytics](https://helpx.adobe.com/marketing-cloud/analytics.html), [Chartbeat](http://support.chartbeat.com/docs/), [Google Analytics](https://developers.google.com/analytics/devguides/collection/amp-analytics/)).
+- Ingestion by a vendor-owned endpoint for interoperability with a vendor solution (for example, [Adobe Analytics](https://helpx.adobe.com/marketing-cloud/analytics.html), [Chartbeat](http://support.chartbeat.com/docs/), [Google Analytics](https://developers.google.com/analytics/devguides/collection/amp-analytics/)).
 
-Untuk mengirimkan data analitik ke penyedia analitik, sertakan atribut `type` ke tag [`amp-analytics`](../../../../documentation/components/reference/amp-analytics.md) dan tetapkan nilainya ke vendor yang sesuai, seperti dijelaskan pada daftar [Vendor Analitik](analytics-vendors.md).
+Untuk mengirim data analisis ke penyedia analisis, sertakan atribut `type` ke dalam tag [`amp-analytics`](../../../../documentation/components/reference/amp-analytics.md) dan tetapkan nilainya ke vendor yang sesuai, seperti dijelaskan pada daftar [Vendor Analisis](analytics-vendors.md).
 
-Misalnya: `<amp-analytics type="googleanalytics">` mengirimkan data analitik ke penyedia analitik pihak ketiga, Google Analytics. Untuk mengirimkan data ke endpoint milik penayang, jangan sertakan atribut `type`; data analitik dikirimkan ke endpoint yang ditentukan untuk masing-masing [permintaan](deep_dive_analytics.md#what-data-gets-sent-requests-attribute).
+Misalnya: `<amp-analytics type="googleanalytics">` mengirim data analisis ke penyedia analisis pihak ketiga, Google Analytics. Untuk mengirim data ke endpoint milik penayang, jangan sertakan atribut `type`; data analisis dikirim ke endpoint yang ditentukan untuk masing-masing [permintaan](deep_dive_analytics.md#what-data-gets-sent-requests-attribute).
 
-Konfigurasi vendor analitik adalah cara cepat untuk mulai menggunakan [`amp-analytics`](../../../../documentation/components/reference/amp-analytics.md). Sebaiknya Anda pelajari dokumentasi vendor dan sumber daya bantuan untuk mendapatkan panduan lebih lanjut. Seperti disebutkan sebelumnya, daftar vendor yang telah berintegrasi dengan AMP, serta tautan ke dokumentasi spesifik mereka, dapat ditemukan di daftar [Vendor Analitik](analytics-vendors.md).
+Konfigurasi vendor analisis adalah cara cepat untuk mulai menggunakan [`amp-analytics`](../../../../documentation/components/reference/amp-analytics.md). Sebaiknya Anda pelajari dokumentasi vendor dan referensi bantuan untuk mendapatkan panduan lebih lanjut. Seperti disebutkan sebelumnya, daftar vendor yang telah berintegrasi dengan AMP, serta link ke dokumentasi spesifik mereka, dapat ditemukan di daftar [Vendor Analisis](analytics-vendors.md).
 
-Jika Anda adalah vendor analitik, pelajari lebih lanjut cara [mengintegrasikan analitik sendiri ke HTML AMP](https://github.com/ampproject/amphtml/blob/master/extensions/amp-analytics/integrating-analytics.md).
+Jika Anda adalah vendor analisis, pelajari lebih lanjut cara [mengintegrasikan konfigurasi analisis Anda ke AMP HTML](https://github.com/ampproject/amphtml/blob/master/extensions/amp-analytics/integrating-analytics.md).
 
 ## Memuat konfigurasi jarak jauh: atribut config (konfigurasi)
 

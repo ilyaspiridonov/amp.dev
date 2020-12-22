@@ -1,5 +1,5 @@
 ---
-"$title": Atribut umum
+"$title": Common element attributes
 "$order": '1'
 description: AMP menyediakan kumpulan atribut umum yang diperluas untuk berbagai komponen AMP (dan elemen HTML).  Dokumen ini menjelaskan setiap atribut umum.
 toc: "[TOC]"
@@ -27,12 +27,12 @@ Untuk informasi selengkapnya, lihat [Placeholder & fallback](../../../documentat
 
 Semua elemen AMP yang mendukung tata letak `responsive`, juga mendukung atribut `heights`. Nilai atribut ini merupakan ekspresi ukuran berdasarkan ekspresi media, serupa dengan [atribut ukuran pada tag `img`](https://developer.mozilla.org/en-US/docs/Web/HTML/Element/img) namun dengan dua perbedaan utama:
 
-1. Nilainya berlaku pada tinggi, bukan lebar elemen.
-2. Nilai persen diizinkan. Nilai persen menunjukkan persentase lebar elemen tersebut. Misalnya, nilai `80%` menunjukkan bahwa tinggi elemen akan menjadi 80% dari lebar elemen.
+1. The value applies to the height, not the width of the element.
+2. Percent values are allowed. A percent value indicates the percent of the element's width. For example, a value of `80%` indicates that the height of the element will be 80% of the element's width.
 
 Catatan: Jika atribut `heights` ditentukan bersamaan dengan `width` dan `height`, setelan default `layout` diubah menjadi `responsive`.
 
-Contoh:
+Example:
 
 ```html
 <amp-img src="amp.png"
@@ -41,7 +41,7 @@ Contoh:
 </amp-img>
 ```
 
-Untuk informasi selengkapnya, lihat [Gambar responsif dengan atribut srcset, sizes & heights](../../../documentation/guides-and-tutorials/develop/style_and_layout/art_direction.md).
+For more information, see [Art direction with srcset, sizes & heights](../../../documentation/guides-and-tutorials/develop/style_and_layout/art_direction.md).
 
 ## layout
 
@@ -119,7 +119,7 @@ Contoh:
 </amp-lightbox>
 ```
 
-Untuk informasi selengkapnya, lihat  [Tindakan dan Kejadian di AMP](amp-actions-and-events.md).
+For more information, see  [Actions and Events in AMP](amp-actions-and-events.md).
 
 ## placeholder
 
@@ -160,9 +160,9 @@ Untuk informasi selengkapnya, lihat [Gambar responsif dengan atribut srcset, siz
     class="i-amphtml-fill-content i-amphtml-replaced-content">
 ```
 
-Untuk informasi selengkapnya, lihat [Gambar responsif dengan atribut srcset, sizes & heights](../../../documentation/guides-and-tutorials/develop/style_and_layout/art_direction.md).
+For more information, see [Art direction with srcset, sizes & heights](../../../documentation/guides-and-tutorials/develop/style_and_layout/art_direction.md).
 
-## width dan height
+## width and height
 
 Untuk sebagian [tata letak](../../../documentation/guides-and-tutorials/develop/style_and_layout/control_layout.md#the-layout-attribute), komponen AMP harus memiliki atribut `width` dan `height` yang berisi nilai piksel bilangan bulat.
 

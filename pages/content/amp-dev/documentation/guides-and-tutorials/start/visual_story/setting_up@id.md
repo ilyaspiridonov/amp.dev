@@ -31,7 +31,7 @@ Untuk menguji Cerita Web sampel, kita harus mengakses berkasnya dari server web.
 - [Apache](https://httpd.apache.org/docs/2.4/getting-started.html)
 - [nginx](http://nginx.org/)
 
-Setelah menyiapkan server web lokal, lihat tampilan Cerita Web yang sudah selesai/jadi pada akhir tutorial ini dengan mengakses <a href="http://localhost:8000/pets-completed.html">URL</a> berikut ini:
+After setting up your local web server, have a look at what our completed Web Story will look like by the end of this tutorial by accessing the following <a href="http://localhost:8000/pets-completed.html">URL</a>:
 
 ```html
 http://localhost:8000/pets-completed.html

@@ -37,7 +37,7 @@ Pada contoh ini, kita akan menambahkan slot iklan untuk menayangkan iklan dari j
 
 ### Langkah 3: Tentukan ukuran unit iklannya
 
-Tambahkan atribut `width` dan `height` ke tag `<amp-ad>`.  Atribut ini menentukan ukuran iklan di halaman AMP Anda:
+Add the `width` and `height` attributes to the [`amp-ad`](../../../../documentation/components/reference/amp-ad.md)  tag.  This specifies the size of the ad on your AMP page:
 
 ```html
 <amp-ad type="a9">
@@ -47,7 +47,7 @@ Tambahkan atribut `width` dan `height` ke tag `<amp-ad>`.  Atribut ini menentuka
 
 ### Langkah 4: Tetapkan parameter jaringan iklan
 
-Setiap jaringan memiliki atribut data spesifik yang dibutuhkan untuk menayangkan iklan.  Lihat dokumentasi `<amp-ad>` jaringan iklan dan tambahkan atribut yang diperlukan. Pada contoh berikut, jaringan a9 memerlukan parameter tambahan untuk menentukan ukuran iklan, dan detail lainnya:
+Each network has specific data attributes they require to serve ads.  Refer to the ad network's [`amp-ad`](../../../../documentation/components/reference/amp-ad.md) documentation and add the attributes that are needed In the following example,  the a9 network requires additional parameters to specify the size of the ad, and other details:
 
 ```html
 <amp-ad type="a9"
@@ -116,7 +116,7 @@ Berikut ini beberapa tips untuk memaksimalkan efektivitas iklan di halaman AMP:
 - Kecuali Anda menggunakan CSS lanjutan atau kueri media, **pastikan unit iklan berada di tengah-tengah halaman** untuk memberikan pengalaman web seluler yang optimal kepada pengguna.
 - Aktifkan [permintaan iklan multi-ukuran](https://github.com/ampproject/amphtml/blob/master/ads/README.md#support-for-multi-size-ad-requests) pada inventaris AMP Anda untuk meningkatkan tekanan lelang iklan dan mendorong pendapatan.
 
-### Permintaan & harga: dapatkan harga yang tepat untuk iklan Anda
+### Demand & pricing: get the right price for your ads
 
 - **Jual unit iklan di halaman AMP Anda di seluruh saluran penjualan**, termasuk saluran penjualan langsung dan tidak langsung guna memaksimalkan persaingan untuk inventaris Anda di halaman AMP.
 - **Tetapkan harga inventaris iklan di halaman AMP** yang sama dengan harga untuk inventaris Anda di halaman non-AMP. Pantau performa dan sesuaikan harga berdasarkan pemantauan tersebut.
@@ -124,10 +124,10 @@ Berikut ini beberapa tips untuk memaksimalkan efektivitas iklan di halaman AMP:
 
 ### Jenis iklan: Tayangkan jenis iklan terbaik
 
-- **Hindari materi iklan yang berat** sesuai [panduan IAB](http://www.iab.com/wp-content/uploads/2015/11/IAB_Display_Mobile_Creative_Guidelines_HTML5_2015.pdf).
-- **Hindari iklan interstisial** atau format iklan lain yang menyebabkan konten diulang saat iklan dimuat.
+- **Avoid heavy creatives** per [IAB guidelines](http://www.iab.com/wp-content/uploads/2015/11/IAB_Display_Mobile_Creative_Guidelines_HTML5_2015.pdf).
+- **Avoid interstitials** or other ad formats that cause the content to reflow on ad load.
 - **Optimalkan visibilitas** dengan mengatur strategi pemuatan data agar lebih mengutamakan visibilitas daripada penayangan.
-- **Tempatkan iklan dalam konten video** melalui [pemutar yang didukung](../../../../documentation/components/index.html#media) atau [`amp-iframe`](../../../../documentation/components/reference/amp-iframe.md) untuk mengaktifkan pendapatan pada semua jenis konten.
+- **Place ads in your video content** via [supported players](../../../../documentation/components/index.html#media) or [`amp-iframe`](../../../../documentation/components/reference/amp-iframe.md) to enable revenue on all types of content.
 - **Terapkan iklan native** untuk bersaing dengan iklan display menggunakan permintaan iklan multi-ukuran, yang akan meningkatkan tekanan permintaan sekaligus memberikan pengalaman pengguna premium kepada pembaca Anda.
 
 ### Inovasi: Tawarkan produk iklan yang paling menarik
@@ -140,7 +140,7 @@ Berikut ini beberapa tips untuk memaksimalkan efektivitas iklan di halaman AMP:
     - [Iklan Melekat](../../../../documentation/examples/documentation/amp-sticky-ad.html)
     - [Flying Carpet](../../../../documentation/examples/documentation/amp-fx-flying-carpet.html)
 
-## Referensi tambahan
+## Additional resources
 
 - [Template iklan AMPHTML](../../../../documentation/examples/index.html)
 - [Demo: Memperlihatkan cara menambah `amp-ad` ke halaman AMP](../../../../documentation/components/reference/amp-ad.md)

@@ -44,9 +44,9 @@ Bakal tempat tidak harus berupa elemen AMP; elemen HTML apa pun dapat berfungsi 
 
 Anda dapat menentukan atribut `fallback` pada sebuah elemen untuk mengindikasikan perilaku fallback:
 
-- untuk elemen apa pun yang tidak didukung oleh browser
+- for any element the browser doesn’t support
 - jika konten gagal dimuat (cth.: tweet yang telah dihapus)
-- jika jenis gambar tidak didukung (cth.: WebP tidak didukung di semua browser)
+- if the image type is unsupported (e.g., WebP isn't supported in all browsers)
 
 Anda dapat menetapkan atribut `fallback` pada elemen HTML *apa pun*, bukan hanya elemen AMP. Jika ditetapkan, elemen `fallback` harus merupakan anak (turunan) langsung dari elemen AMP.
 

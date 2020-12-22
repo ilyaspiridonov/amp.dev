@@ -14,7 +14,7 @@ Iklan HTML AMP ditulis dalam HTML AMP sesuai dengan [spesifikasi iklan HTML AMP]
 
 ### Keuntungan
 
-Mengapa iklan HTML AMP lebih baik daripada iklan tradisional?
+Why are AMPHTML ads better than traditional ads?
 
 1. **Lebih cepat**: Iklan HTML AMP lebih cepat karena iklan diminta sebelumnya dalam proses perenderan halaman, dan segera ditampilkan tepat sebelum pengguna akan melihat iklan. Ukuran berkas iklan HTML AMP yang lebih kecil juga meningkatkan kecepatan.
 2. **Lebih ringan**: Iklan HTML AMP menggabungkan fungsi iklan yang biasa digunakan, yang dapat mengurangi ukuran berkas iklan. Setelah berada di halaman, iklan HTML AMP juga menggunakan lebih sedikit sumber daya. Misalnya, 10 pelacak pada iklan biasa akan meminta informasi mereka sendiri, namun iklan HTML AMP mengumpulkan semua data sekali dan mendistribusikannya ke sejumlah pelacak yang berminat.
@@ -45,7 +45,7 @@ Iklan HTML AMP bersifat fleksibel dan dinamis, sehingga memungkinkan banyak form
 
 ## Cara kerja iklan HTML AMP
 
-{{ image('/static/img/docs/ads/amphtml-ads-how.svg', 1019, 434, alt='Serving AMPHTML ads to AMP pages', caption='Menayangkan iklan HTML AMP ke halaman AMP', align='' ) }}
+{{ image('/static/img/docs/ads/amphtml-ads-how.svg', 1019, 434, alt='Serving AMPHTML ads to AMP pages', caption='Serving AMPHTML ads to AMP pages', align='' ) }}
 
 1. Penayang memasukkan slot iklan di halaman AMP-nya melalui tag [`amp-ad`](../../../documentation/components/reference/amp-ad.md), yang menetapkan jaringan iklan yang ingin digunakan.
 2. Runtime AMP mengirimkan permintaan iklan ke jaringan iklan tertentu untuk mengambil iklan. Jaringan iklan yang dapat menayangkan iklan HTML AMP menyediakan [implementasi Fast Fetch](https://github.com/ampproject/amphtml/blob/master/ads/google/a4a/docs/Network-Impl-Guide.md) yang memvalidasi dan menandatangani atau mengesahkan materi iklan.
@@ -73,11 +73,11 @@ Jika Anda adalah agensi kreatif, Anda harus membuat iklan sesuai dengan [spesifi
 
 - [Celtra's Ad Creator](http://www.prnewswire.com/news-releases/celtra-partners-with-the-amp-project-showcases-amp-ad-creation-at-google-io-event-300459514.html)
 - [Google Web Designer](https://support.google.com/webdesigner/answer/7529856)
-- Adobe Animate (*segera hadir*)
+- Adobe Animate (*coming soon*)
 
 ### Jaringan/server iklan
 
-Untuk menayangkan iklan HTML AMP ke halaman AMP, Anda perlu membuat ekstensi [`amp-ad`](../../../documentation/components/reference/amp-ad.md) untuk jaringan Anda (kecuali Anda telah memilikinya) yang menggunakan [implementasi permintaan iklan Fast Fetch](https://github.com/ampproject/amphtml/blob/master/ads/google/a4a/docs/Network-Impl-Guide.md). Untuk mengetahui lebih lanjut, kunjungi [Berintegrasi dengan AMP untuk menayangkan iklan spanduk](../../../documentation/guides-and-tutorials/contribute/adnetwork_integration.md). Perlu diingat bahwa tidak diperlukan integrasi khusus untuk menayangkan HTML AMP ke halaman non-AMP.
+Untuk menayangkan iklan AMPHTML ke halaman AMP, Anda perlu membuat ekstensi [`amp-ad`](../../../documentation/components/reference/amp-ad.md) untuk jaringan Anda (kecuali Anda telah memilikinya) yang menggunakan [implementasi permintaan iklan Fast Fetch](https://github.com/ampproject/amphtml/blob/master/ads/google/a4a/docs/Network-Impl-Guide.md).  Untuk mengetahui detailnya, lihat [Berintegrasi dengan AMP untuk menayangkan iklan display](../../../documentation/guides-and-tutorials/contribute/adnetwork_integration.md).  Perlu diingat bahwa tidak diperlukan integrasi khusus untuk menayangkan AMPHTML ke halaman non-AMP.
 
 ## Membuat iklan HTML AMP
 
@@ -87,15 +87,15 @@ Untuk menayangkan iklan HTML AMP ke halaman AMP, Anda perlu membuat ekstensi [`a
 
 - [Celtra's Ad Creator](http://www.prnewswire.com/news-releases/celtra-partners-with-the-amp-project-showcases-amp-ad-creation-at-google-io-event-300459514.html)
 - [Google Web Designer](https://support.google.com/webdesigner/answer/7529856)
-- Adobe Animate (*segera hadir*)
+- Adobe Animate (*coming soon*)
 
 ### Memvalidasi sintaksis iklan HTML AMP
 
 Setelah membuat iklan HTML AMP, Anda harus memastikan bahwa iklan tersebut telah menggunakan sintaksis HTML AMP yang benar. Bergantung pada lingkungan pengembangan Anda, ada beberapa opsi untuk memvalidasi iklan HTML AMP Anda:
 
 - Gunakan modul [NPM validator AMP](https://www.npmjs.com/package/amphtml-validator) untuk validasi integrasi ke CI build/versi Anda.
-- Gunakan [validator AMP](https://validator.ampproject.org/) untuk pengujian satu kali.
-- Bermitra dengan [Cloudflare](https://blog.cloudflare.com/amp-validator-api/) dan gunakan endpoint validator publiknya.
+- Use the [AMP validator](https://validator.ampproject.org/) for one-off testing.
+- Partner with [Cloudflare](https://blog.cloudflare.com/amp-validator-api/) and use their public validator end point.
 
 Untuk merender iklan HTML AMP dengan cepat di halaman AMP (yaitu dengan menggunakan perenderan istimewa di Fast Fetch), sintaksisnya harus tepat. Jika sintaksisnya tidak valid, iklan akan tetap ditampilkan, hanya saja tidak secepat itu.
 
@@ -119,10 +119,10 @@ Ya. Lihat [`amp-animation`](../../../documentation/components/reference/amp-anim
 
 #### Sebagian besar iklan memiliki jalan keluar iklan yang dapat dikonfigurasi dan target yang dapat diketuk. Apakah iklan HTML AMP juga memiliki mekanisme yang sama?
 
-Ya. Lihat [`amp-ad-exit`](../../../documentation/components/reference/amp-animation.md).
+Yes. See [`amp-ad-exit`](../../../documentation/components/reference/amp-ad-exit.md).
 
 #### Saya tidak dapat menemukan apa yang saya butuhkan. Ke mana saya harus bertanya?
 
-- [Stack Overflow](http://stackoverflow.com/questions/tagged/amp-html) adalah cara yang kami rekomendasikan untuk menemukan jawaban atas pertanyaan tentang AMP. Karena anggota komunitas Project AMP secara rutin memantau Stack Overflow, Anda mungkin akan menerima respons tercepat terhadap pertanyaan Anda di dalamnya.
-- Bergabunglah ke saluran [Slack #a4a-discuss](https://docs.google.com/forms/d/e/1FAIpQLSd83J2IZA6cdR6jPwABGsJE8YL4pkypAbKMGgUZZriU7Qu6Tg/viewform?fbzx=4406980310789882877) untuk mendapatkan solusi dan jawaban.
-- Jika Anda mendapati bug di AMP atau memiliki permintaan fitur untuk AMP, lihat [Melaporkan masalah dengan AMP](https://github.com/ampproject/amphtml/blob/master/CONTRIBUTING.md#reporting-issues-with-amp) untuk mengetahui informasi tentang cara mengajukan masalah.
+- [Stack Overflow](http://stackoverflow.com/questions/tagged/amp-html) is our recommended way to find answers to questions about AMP; since members of the AMP Project community regularly monitor Stack Overflow you will probably receive the fastest response to your questions there.
+- Join the [Slack #a4a-discuss](https://docs.google.com/forms/d/e/1FAIpQLSd83J2IZA6cdR6jPwABGsJE8YL4pkypAbKMGgUZZriU7Qu6Tg/viewform?fbzx=4406980310789882877) channel for solutions and answers.
+- If you encounter a bug in AMP or have a feature request for AMP, see [Reporting issues with AMP](https://github.com/ampproject/amphtml/blob/master/CONTRIBUTING.md#reporting-issues-with-amp) for information on filing an issue.

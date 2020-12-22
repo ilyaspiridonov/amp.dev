@@ -32,13 +32,13 @@ Eror Konsol Pengembang akan terlihat seperti ini:
 
 ### Antarmuka Web
 
-Validator AMP dapat digunakan sebagai antarmuka web di <a href="https://validator.ampproject.org/">validator.ampproject.org</a>. Antarmuka ini memperlihatkan eror yang ditampilkan inline bersama sumber HTML halaman. Antarmuka ini adalah editor interaktif: perubahan pada sumber HTML menyebabkan validasi ulang yang interaktif.
+The AMP Validator can be used as a web interface at <a href="https://validator.ampproject.org/">validator.ampproject.org</a>. This interface shows errors displayed inline alongside the HTML source of the page. The interface is an interactive editor: changes to the html source result in interactive revalidation.
 
 <amp-img src="/static/img/docs/validator_web_ui.png" width="660" height="507" layout="responsive" alt="Screen grab of validator.ampproject.org with error examples."></amp-img>
 
 ### Ekstensi Browser
 
-Validator AMP dapat diakses langsung dari toolbar browser menggunakan ekstensi browser. Saat Anda menjelajah, Validator AMP akan otomatis memvalidasi setiap halaman AMP yang dikunjungi dan memberikan indikasi visual terkait validitas halaman dengan ikon berwarna.
+The AMP Validator can be accessed directly from your browser's toolbar using a browser extension. As you browse, it will automatically validate each AMP page visited and gives a visual indication of the validity of the page as a colored icon.
 
 <table>
   <tr>
@@ -70,7 +70,7 @@ Ekstensi Validator AMP untuk [Chrome](https://chrome.google.com/webstore/detail/
 
 Sebagai bagian dari pipeline build dan pengujian, Anda dapat mengintegrasikan validasi AMP melalui paket NPM Validator AMP: [amphtml-validator](https://www.npmjs.com/package/amphtml-validator) atau [gulp-amphtml-validator](https://www.npmjs.com/package/gulp-amphtml-validator) (plugin gulp).  Misalnya: Anda dapat menggunakan paket NPM Validator AMP untuk uji integrasi atau dalam tugas terjadwal untuk memverifikasi halaman AMP produksi.
 
-##### Contoh: Memvalidasi berkas HTML AMP
+##### Example: Validating an AMP HTML file
 
 Dalam contoh ini, kita memvalidasi berkas HTML AMP dengan menggunakan paket NPM [amphtml-validator](https://www.npmjs.com/package/amphtml-validator). Status validasi diteruskan ke konsol.
 
@@ -196,17 +196,18 @@ Kebanyakan eror validasi cukup mudah dideteksi dan diperbaiki. Perhatikan tag HT
 
 Yang menyebabkan eror validasi AMP, seperti ditunjukkan pada alat lain berikut ini:
 
-- Konsol Pengembang Browser {amp-img0}{/amp-img0}
+- Browser Developer Console
+    <amp-img src="/static/img/docs/validator_console_imgerror.png" width="696" height="30" layout="responsive" alt="AMP error: The tag 'img' may only appear as a descendant of tag'noscript'. Did you mean 'amp-img'? line 11, column 2"></amp-img>
 
 
 
-- Antarmuka Web
-    <amp-img src="/static/img/docs/validator_webui_imgerror.png" width="676" height="58" layout="responsive" alt="Error AMP: Tag 'img' mungkin hanya muncul sebagai turunan dari tag'noscript'. Mungkin maksud Anda 'amp-img'? line 11, column 2"></amp-img>
+- Web Interface
+    <amp-img src="/static/img/docs/validator_webui_imgerror.png" width="676" height="58" layout="responsive" alt="AMP error: The tag 'img' may only appear as a descendant of tag'noscript'. Did you mean 'amp-img'? line 11, column 2"></amp-img>
 
 
 
-- Ekstensi Browser
-    <amp-img src="/static/img/docs/validator_extension_imgerror.png" width="724" height="108" layout="responsive" alt="Error AMP: Tag 'img' mungkin hanya muncul sebagai turunan dari tag'noscript'. Mungkin maksud Anda 'amp-img'? line 11, column 2"></amp-img>
+- Browser Extension
+    <amp-img src="/static/img/docs/validator_extension_imgerror.png" width="724" height="108" layout="responsive" alt="AMP error: The tag 'img' may only appear as a descendant of tag'noscript'. Did you mean 'amp-img'? line 11, column 2"></amp-img>
 
 
 
@@ -214,7 +215,7 @@ Setiap alat memberikan beberapa informasi:
 
 1. Lokasi (baris dan kolom) dalam dokumen HTML tempat eror terjadi, yang pada beberapa antarmuka dapat diklik untuk menyorot lokasi tersebut. Pada kasus ini, masalah terjadi di baris 11, kolom 2.
 2. Baris teks yang menjelaskan eror itu. Pada kasus ini, teks menunjukkan bahwa kita menggunakan tag `<img>`, saat seharusnya menggunakan tag [`<amp-img>`](../../../../documentation/components/reference/amp-img.md).
-3. Tautan ke dokumen yang relevan tentang eror tersebut. Pada kasus ini, dokumentasi untuk tag [`<amp-img>`](../../../../documentation/components/reference/amp-img.md). Tidak semua eror menghasilkan tautan dokumentasi.
+3. A link to a relevant document about the error. In this case the documentation for the [`<amp-img>`](../../../../documentation/components/reference/amp-img.md) tag. Not all errors generate documentation links.
 
 Dengan membaca ulang [spek](../../../../documentation/guides-and-tutorials/learn/spec/amphtml.md) secara cermat, kita akan tahu bahwa kita menggunakan tag`<img>`, saat seharusnya menggunakan tag [`<amp-img>`](../../../../documentation/components/reference/amp-img.md).
 
