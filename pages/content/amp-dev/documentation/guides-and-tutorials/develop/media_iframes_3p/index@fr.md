@@ -3,10 +3,10 @@
 "$order": '8'
 description: "Tout comme sur une page HTML normale, AMP vous permet d'intégrer des contenus image, vidéo et audio. Découvrez la différence avec les équivalents AMP et apprenez à ..."
 formats:
-- sites Web
+- websites
 - stories
-- e-mail
-- annonces
+- email
+- ads
 components:
 - iframe
 author: pbakaus

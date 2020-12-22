@@ -3,10 +3,10 @@
 "$order": '2'
 description: Guide terminologique AMP
 formats:
-- sites Web
+- websites
 - stories
-- annonces
-- e-mail
+- ads
+- email
 author: CrystalOnScript
 ---
 

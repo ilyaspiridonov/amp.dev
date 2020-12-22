@@ -3,7 +3,7 @@
 "$order": '3'
 description: 'Le '
 formats:
-- sites Web
+- websites
 - stories
 ---
 

@@ -4,7 +4,7 @@
 description: "Les blogs en direct sont des pages Web qui sont fréquemment mises à jour tout au long d'un événement en cours, tel qu'un événement sportif ou une élection. Dans AMP, vous pouvez implémenter un blog en direct en utilisant ..."
 tutorial: 'true'
 formats:
-- sites Web
+- websites
 author: kul3r4
 contributors:
 - bpaduch

@@ -1,25 +1,24 @@
 ---
-"$title": Enable experimental features
+"$title": Activer les fonctionnalités expérimentales
 "$order": '3'
 description: Les composants expérimentaux AMP sont des fonctionnalités publiées qui ne sont pas encore prêtes pour une large utilisation, et sont donc protégées par un statut expérimental.
 formats:
-- sites Web
+- websites
 - stories
-- annonces
+- ads
 ---
 
-[AMP experimental components](https://github.com/ampproject/amphtml/tree/master/tools/experiments) are released features not yet ready for wide use, so they are protected by an **experimental** status.
+[Les composants expérimentaux AMP](https://github.com/ampproject/amphtml/tree/master/tools/experiments) sont des fonctionnalités publiées qui ne sont pas encore prêtes pour une large utilisation, et sont donc protégées par un statut expérimental.
 
-Developers and users can opt-in to using these features before they are fully released. But they should be used with caution, as they may contain bugs or have unexpected side effects.
+Les développeurs et les utilisateurs peuvent choisir d'utiliser ces fonctionnalités avant leur sortie complète. Mais elles doivent être utilisées avec prudence, car elles peuvent contenir des bogues ou avoir des effets secondaires inattendus.
 
 [tip type="important"] Il existe un risque que certaines expériences ne soient jamais livrées en tant que fonctionnalités sur le Projet AMP. [/tip]
 
 {% set experimental_components = g.docs ('/ content / amp-dev / documentation / components / reference') | selectattr ('experimental') | list%} {% if experimental_components | length%} Voici une liste de composants qui sont actuellement en état expérimental et sont prêts à être testés par les développeurs pour les premiers commentaires des utilisateurs:
 
-<ul>{% pour le composant dans composants_expérimentaux %}<li> <a href="%7B%7B%20component.url.path%20%7D%7D">{{component.title}}</a>
-</li> {% endfor%}</ul> {% endif %}
+<ul><br>{% for component in experimental_components %}<br>  <li><a href="{{ component.url.path }}">{{ component.title }}</a></li><br>{% endfor %}<br></ul><br>{% endif %}
 
-## Opt into the AMP Dev Channel
+## Activation d'AMP Dev Channel
 
 AMP Dev CHannel est un moyen d'activer l'utilisation sur un navigateur d'une version plus récente des bibliothèques AMP JS.
 
@@ -27,36 +26,36 @@ La version AMP Dev Channel **peut être moins stable** et contenir des fonctionn
 
 L'activation de Dev Channel est idéale pour:
 
-- test and play with new features not yet available to all users.
-- use in quality assurance (QA) to ensure that your site is compatible with the next version of AMP.
+- tester et jouer avec de nouvelles fonctionnalités qui ne sont pas encore disponibles pour tous les utilisateurs.
+- une utilisation dans l'assurance qualité (QA) pour vous assurer que votre site est compatible avec la prochaine version d'AMP.
 
 Si vous trouvez un problème qui ne semble se produire que dans la version Dev Channel d'AMP, [signalez un problème](https://github.com/ampproject/amphtml/issues/new) avec une description. Incluez toujours une URL vers une page qui reproduit le problème.
 
-To opt your browser into the AMP Dev Channel, go to [the AMP experiments page](https://cdn.ampproject.org/experiments.html) and activate the "AMP Dev Channel" experiment. To get notified about important/breaking changes about AMP, subscribe to the [amphtml-announce](https://groups.google.com/forum/#!forum/amphtml-announce) mailing list.
+Pour activer AMP Dev Channel pour votre navigateur, accédez à [la page des tests AMP](https://cdn.ampproject.org/experiments.html) et activez le test "AMP Dev Channel". Pour être informé des changements importants/récents concernant AMP, abonnez-vous à la liste de diffusion [amphtml-announce](https://groups.google.com/forum/#!forum/amphtml-announce).
 
-## Enable an experimental component
+## Activer un composant expérimental
 
-#### Served from cdn.ampproject.org
+#### Fourni depuis cdn.ampproject.org
 
-For content served from `https://*.cdn.ampproject.org`, go to `/experiments.html` on a Google AMP Cache subdomain and enable (or disable) any experimental component by toggling them on (or off).
+Pour les contenus fournis depuis `https://*.cdn.ampproject.org`, allez sur `/experiments.html` sur un sous-domaine de Google AMP Cache est activez (ou désactivez) le composant expérimental de votre choix.
 
 Par exemple, pour activer les composants expérimentaux sur les pages AMP mises en cache dont l'origine source est `www.example.com`, allez sur `www-example-com.cdn.ampproject.org/experiments.html`.
 
 L'activation de composants expérimentaux est enregistrée sur `localStorage` et active uniquement le composant expérimental sur les pages AMP fournies depuis le domaine actuel.
 
-#### Served from other domains
+#### Fournies à partir d'autres domaines
 
-For content served from non-CDN domains, experiments can be toggled in the devtools console using:
+Pour le contenu diffusé à partir de domaines non CDN, les composants expérimentaux peuvent être activés dans la console devtools à l'aide de:
 
 ```js
 AMP.toggleExperiment('experiment')
 ```
 
-Any AMP file that includes experimental features will fail [AMP validation](validation-workflow/validate_amp.md). Remove these experimental components for production-ready AMP documents.
+Tout fichier AMP qui comprend des fonctionnalités expérimentales échouera à la [validation AMP](validation-workflow/validate_amp.md). Supprimez ces composants expérimentaux pour les documents AMP prêts pour la production.
 
-## Enable an experiment for a particular document
+## Activer un composant expérimental pour un document particulier
 
-Document can choose to opt in a certain experiments. To do that, place a meta tag of the `amp-experiments-opt-in` name in the head of the HTML document before your AMP script (`https://cdn.ampproject.org/v0.js`). Its content value is a comma-separated string of experiment IDs to opt in.
+Un document peut choisir d'activer des contenus expérimentaux. Pour ce faire, placez une balise meta du nom `amp-experiments-opt-in` dans l'en-tête du document HTML avant votre script AMP (`https://cdn.ampproject.org/v0.js`). Sa valeur de contenu est une chaîne d'ID d'expérimentation séparés par des virgules.
 
 ```html
 <head>
@@ -83,8 +82,7 @@ Les essais d'origine offrent la possibilité de mettre en œuvre et de bénéfic
 
 {% set trial_components = g.docs('/content/amp-dev/documentation/components/reference')|selectattr('origin_trial')|list %} {% if trial_components|length %} Les composants de la liste suivante peuvent être actuellement testés via un essai d'origine:
 
-<ul>{% pour le composant dans composants_d'essai %}<li> <a href="%7B%7B%20component.url.path%20%7D%7D">{{component.title}}</a>
-</li> {% endfor%}</ul> {% endif %}
+<ul><br>{% for component in trial_components %}<br>  <li><a href="{{ component.url.path }}">{{ component.title }}</a></li><br>{% endfor %}<br></ul><br>{% endif %}
 
 ### Activer un essai d'origine
 

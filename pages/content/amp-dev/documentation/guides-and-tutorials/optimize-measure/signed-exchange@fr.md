@@ -2,7 +2,7 @@
 "$title": "Fournir AMP à l'aide d'échanges signés"
 "$order": '4'
 formats:
-- sites Web
+- websites
 author: CrystalOnScript
 ---
 

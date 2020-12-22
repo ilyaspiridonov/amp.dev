@@ -2,9 +2,9 @@
 "$title": Actions et événements
 order: '0'
 formats:
-- sites Web
+- websites
 - stories
-- annonces
+- ads
 teaser:
   text: '[tip type="note"]'
 ---

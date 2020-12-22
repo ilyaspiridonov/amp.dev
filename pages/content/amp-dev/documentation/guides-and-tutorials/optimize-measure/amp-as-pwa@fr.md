@@ -1,9 +1,9 @@
 ---
-"$title": Easy offline access and improved performance
+"$title": Accès hors ligne facile et performances améliorées
 "$order": '11'
 description: Un service worker est un proxy côté client qui se trouve entre votre page et votre serveur, et est utilisé pour créer des expériences hors ligne fantastiques, ...
 formats:
-- sites Web
+- websites
 author: CrystalOnScript
 contributors:
 - pbakaus
@@ -47,7 +47,7 @@ Si vous êtes ici, c'est que vous créez des pages avec AMP. L'équipe AMP se so
 
 [tip type="default"] **CONSEIL –** Suivez notre tutoriel pour apprendre à utiliser le [service worker AMP dans votre PWA](/content/amp-dev/documentation/guides-and-tutorials/optimize-measure/amp_to_pwa.md). [/tip]
 
-### Installation du service worker AMP
+### Installing the AMP Service Worker
 
 Installez le Service Worker AMP en quelques étapes simples:
 
@@ -157,5 +157,5 @@ return networkResponse;
 
 En utilisant cette technique, vous pouvez modifier votre page AMP avec toutes sortes de fonctionnalités supplémentaires qui échoueraient autrement la [validation AMP](../../../documentation/guides-and-tutorials/learn/validation-workflow/validate_amp.md), telles que:
 
-- Dynamic features that require custom JS.
+- Les fonctionnalités dynamiques nécessitant un JS personnalisé.
 - Les composants personnalisés/pertinents uniquement pour votre site.
