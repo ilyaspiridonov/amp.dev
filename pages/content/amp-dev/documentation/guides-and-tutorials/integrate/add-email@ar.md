@@ -44,10 +44,9 @@ Content-Type: text/html; charset="UTF-8"
 
 <span>Hello World in HTML!</span>
 --001a114634ac3555ae05525685ae
-
 ```
 
-[tip type="هام"] يعرض بعض عملاء البريد الإلكتروني جزء MIME الأخير فقط. لضمان عرض البريد الإلكتروني، ضع جزء MIME التالي `text/x-amp-html` قبل جزء MIME `text/html`. [/tip]
+[tip type="important"] يعرض بعض عملاء البريد الإلكتروني جزء MIME الأخير فقط. لضمان عرض البريد الإلكتروني، ضع جزء MIME التالي `text/x-amp-html` قبل جزء MIME `text/html`. [/tip]
 
 # ماذا يحدث عندما يقوم مستلمو البريد بإعادة توجيه رسالة AMP الإلكترونية أو الرد عليها؟
 

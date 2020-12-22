@@ -89,7 +89,7 @@ contributors:
 
 معاينة: <amp-facebook width="476" height="316" layout="responsive" data-embed-as="video" data-href="https://www.facebook.com/nasaearth/videos/10155187938052139"> </amp-facebook>
 
-##### Example: Embedding a video
+##### مثال - تضمين فيديو
 
 مصدر الرمز:
 

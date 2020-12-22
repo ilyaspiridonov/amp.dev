@@ -25,7 +25,7 @@ have a look and request a pull request there.
 قبل أن تتمكن من إضافة خدمة التحليلات إلى وقت تشغيل AMP HTML ، قد تحتاج إلى:
 
 - تحديد أنواع [المتغيرات](https://github.com/ampproject/amphtml/blob/master/extensions/amp-analytics/analytics-vars.md) و[الطلبات](https://github.com/ampproject/amphtml/blob/master/extensions/amp-analytics/amp-analytics.md#requests) التي ستحتاجها في مستند AMP HTML لخدمة التحليلات لديك.
-- تحديد المشغلات التي تؤدي إلى إرسال طلبات التحليلات من صفحة قد تكون ذات صلة بخدمتك.
+- تحديد ما إذا كانت الوظيفة الإضافية للتجميع مطلوبة لإنشاء عنوان url النهائي في حالة استخدام الطلبات بسلوك التجميع.
 - الوضع في الحسبان ما إذا كنت ستقوم [بتتبع المستخدمين عبر](https://github.com/ampproject/amphtml/blob/master/spec/amp-managing-user-state.md) سياقات AMP للطرف الأول والطرف الثالث وطريقة القيام بذلك.
 - تحديد طريقة تعامل لوحة بيانات التحليلات مع زيارات AMP.
 - تحديد أي وظائف مفقودة في `amp-analytics`، و[طلبات الملفات](https://github.com/ampproject/amphtml/issues/new) للميزات المطلوبة.
@@ -61,11 +61,10 @@ have a look and request a pull request there.
 
 يُعد نهج نقطة النهاية النهج القياسي نفسه المفصل في القسم السابق. فيما يتكون نهج التكوين من إنشاء تكوين فريد لـ amp-analytics خاصًا بكل ناشر ويتضمن جميع حزم التحليلات المتوافقة. وقد يقوم الناشر بتضمين التكوين باستخدام بنية مشابهة لما يلي:
 
-[sourcecode:html] <amp-analytics config="https://my-awesome-tag-manager.example.com/user-id.json"
-
->
->
-
+[sourcecode:html]
+<amp-analytics
+  config="https://my-awesome-tag-manager.example.com/user-id.json"
+></amp-analytics>
 [/sourcecode]
 
 لاتباع هذا النهج، راجع الوثائق لتكامل الناشرين مع تحليلات AMP.
