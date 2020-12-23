@@ -3,8 +3,8 @@
 "$order": '3'
 description: '借助 '
 formats:
-- 网站
-- 故事
+- websites
+- stories
 ---
 
 故事是一种全屏沉浸式体验。它们使用自己的网址托管在开放网络上，方便用户共享。但是，如果您想将故事整合到自己的网站（例如博客、产品介绍或新闻报道）中，该如何操作呢？
@@ -86,7 +86,7 @@ formats:
 
 ### 指定故事
 
-Include the `<amp-story-player>` element inside the document `body`. Then specify the desired story by placing an `<a>` tag inside of the `<amp-story-player>` element. Point the `href` to the story’s location. The `href` may point to the URL of a hosted story or a relative path. Place the title of the story within the `<a>` tags.
+在文档 `body` 中添加 `<amp-story-player>` 元素。然后，在 `<amp-story-player>` 元素中放置 `<a>` 标记，指定所需的故事。将 `href` 指向故事所在位置。`href` 可能会指向已托管故事的网址或者相对路径。将故事标题放入 `<a>` 标记。
 
 ```html
  <amp-story-player style="width: 360px; height: 600px;">
