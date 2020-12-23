@@ -1,5 +1,5 @@
 ---
-"$title": Create responsive AMP pages
+"$title": Comment créer des pages AMP interactives
 "$order": '5'
 description: "La conception Web interactive consiste à créer des pages Web fluides qui répondent aux besoins de vos utilisateurs, des pages adaptées à la taille et à l'orientation de l'écran de leur appareil. Vous pouvez y parvenir ..."
 formats:
@@ -21,9 +21,9 @@ La conception Web interactive consiste à créer des pages Web fluides qui répo
 
 Dans ce guide, nous allons vous montrer comment vous pouvez facilement implémenter ces fondamentaux d'interactivité dans AMP:
 
-- [Controlling the viewport](#controlling-the-viewport)
-- [Creating a responsive layout](#creating-a-responsive-layout)
-- [Scaling media](#scaling-media-for-the-page)
+- [Contrôle de la fenêtre](#controlling-the-viewport)
+- [Création d'une mise en page interactive](#creating-a-responsive-layout)
+- [Mise à l'échelle des médias](#scaling-media-for-the-page)
 
 [video src='https://www.youtube.com/watch?v=XDvbJ2apaiA' caption='Learn about responsive design in AMP from this video.']
 
@@ -115,11 +115,11 @@ Il existe de nombreux types de vidéos que vous pouvez ajouter à vos pages AMP.
 
 ### Comment afficher des images interactives <a name="displaying-responsive-images"></a>
 
-Images make up a large part of a web page (approximately [65% of the page's bytes](http://httparchive.org/interesting.php#bytesperpage)). At minimum, your images should be visible on various screen sizes and orientations (i.e., the user doesn't have to scroll, pinch/zoom to see the entire image). That's easily done in AMP via the `"layout=responsive"` attribute (see [Include Images in AMP](../../../../documentation/guides-and-tutorials/develop/media_iframes_3p/index.md)). In addition to the basic responsive image, you might want to serve multiple image resources to:
+Les images constituent une grande partie d'une page Web (environ [65% des octets de la page](http://httparchive.org/interesting.php#bytesperpage)). Au minimum, vos images doivent être visibles sur différentes tailles et orientations d'écran (c'est-à-dire que l'utilisateur n'a pas à faire défiler, pincer/zoomer pour voir l'image entière). Cela se fait facilement dans AMP via l'attribut `"layout=responsive"` (voir [Comment inclure des images dans AMP](../../../../documentation/guides-and-tutorials/develop/media_iframes_3p/index.md) ). En plus de l'image interactive de base, vous souhaiterez peut-être diffuser plusieurs ressources image dans le but de:
 
-- [Serve crisp images for the right resolution](#serving-crisp-images-for-the-right-resolution)
-- [Change the art direction of an image](#changing-the-art-direction-of-an-image)
-- [Provide optimized image formats](#providing-optimized-images)
+- [Diffuser des images nettes pour la bonne résolution](#serving-crisp-images-for-the-right-resolution)
+- [Changer la conception artistique d'une image](#changing-the-art-direction-of-an-image)
+- [Comment fournir des images optimisées](#providing-optimized-images)
 
 #### Diffuser des images nettes pour la bonne résolution <a name="serving-crisp-images-for-the-right-resolution"></a>
 
@@ -261,6 +261,6 @@ Voici quelques exemples qui, nous l'espérons, vous inspireront pour créer des 
 
 #### Conçu par AMP
 
-- [Examples](../../../../documentation/examples/index.html)
-- [Templates](../../../../documentation/templates/index.html)
+- [Exemples](../../../../documentation/examples/index.html)
+- [Modèles](../../../../documentation/templates/index.html)
 - [AMP Conf Workshop Codelab: Making beautiful AMPs](https://codelabs.developers.google.com/codelabs/amp-beautiful-interactive-canonical)

@@ -111,7 +111,7 @@ Vous pouvez définir la largeur `width` , la hauteur `height` et d'autres styles
 </body>
 ```
 
-We recommend maintaining a 3:5 aspect ratio for the best user experience, but you may define any width and height.
+Nous vous recommandons de conserver un format 3: 5 pour une meilleure expérience utilisateur, mais vous pouvez définir la largeur et la hauteur qui vous conviennent.
 
 #### Dimensionnement réactif
 
@@ -140,7 +140,7 @@ Pour une meilleure expérience utilisateur, nous vous recommandons fortement d'i
 
 ## Intégrer plusieurs stories
 
-You may add multiple stories in the same `<amp-story-player>` element by defining multiple `<a>` tags. The player presents the second story’s cover page after user’s tap through the first.
+Vous pouvez ajouter plusieurs stories dans le même élément `<amp-story-player>` en définissant plusieurs balises `<a>`. Le lecteur présente la page de couverture de la deuxième story après que l'utilisateur a cliqué sur la première.
 
 ```html
 <amp-story-player style="width: 360px; height: 600px;">

@@ -3,7 +3,7 @@
 "$order": '16'
 description: "Les stories Web s'affichent en plein écran et plongent les lecteurs dans le contenu. Les annonces qui apparaissent dans les stories Web doivent avoir une conception constante et cohérente avec l'expérience utilisateur des stories Web."
 formats:
-- annonces
+- ads
 - stories
 ---
 
@@ -68,11 +68,11 @@ Les balises de métadonnées spécifient que l'annonce respecte le format Web St
 
 Il est recommandé de choisir la balise amp-cta-type parmi les [options de texte disponibles du bouton CTA](#call-to-action-button-text-enum). AMP localisera automatiquement les options prédéfinies le cas échéant.
 
-Custom text is allowed, but you will need to implement your own localization.
+Vous pouvez utiliser du texte personnalisé, mais vous devrez implémenter votre propre localisation.
 
 ## Énumération du texte du bouton d'appel à l'action <a name="call-to-action-button-text-enum"></a>
 
-The call to action button can be configured from a predefined set of choices:
+Le bouton d'appel à l'action peut être configuré à partir d'un ensemble de choix prédéfini:
 
 - `APPLY_NOW`: « Appliquer »
 - `BOOK_NOW`: « Réserver »

@@ -208,7 +208,7 @@ L'exemple suivant est possible dans AMP:
   </tr>
   <tr>
     <td><code>slideChange</code></td>
-    <td>Fired when the carousel's current slide changes.</td>
+    <td>Se déclenche lorsque la diapositive actuelle du carrousel change.</td>
     <td><pre>// Slide number.<br>event.index</pre></td>
   </tr>
 </table>
@@ -488,7 +488,7 @@ L'exemple suivant est possible dans AMP:
   </tr>
   <tr>
     <td><code>open (default)</code></td>
-    <td>Opens the image lightbox with the source image being the one that triggered the action.</td>
+    <td>Ouvre la lightbox d'image avec l'image source étant celle qui a déclenché l'action.</td>
   </tr>
 </table>
 
